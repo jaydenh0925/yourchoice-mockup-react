@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Category Images (Square with rounded corners) */
+.category-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-img:hover {
+    transform: scale(1.05);
+}
+
+/* Gift Images (Circular) */
+.gift-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gift-img:hover {
+    transform: scale(1.1);
+}
+
+/* Text Styling */
+h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+    text-align: center;
+    text-decoration: underline;
+}
+p:hover {
+    color: #ff5733;
+}
+
+.center-text {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+}
+
+.center-text:hover {
+    color: #ff5733;
+}
+
+/* Gift Items - Ensures Even Spacing */
+.gift-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px; /* Adjust as needed */
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Ensures spacing between items */
+}
+
+/* Gift Images - Circular */
+.gift-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gift-img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .gift-item {
+        width: 100px;
+    }
+    .gift-img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
+/* Responsive Spacing */
+@media (max-width: 768px) {
+    .category-img {
+        height: 150px;
+    }
+    .gift-img {
+        width: 100px;
+        height: 100px;
+    }
+}
